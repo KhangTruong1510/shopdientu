@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script scr="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Thuong mai dien tu</title>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" style="width:200px;height:200px;" background-image="none">
+        </div>
+        <div class="menu">
+            <li><a href="">BÀN PHÍM</a>
+                <ul class="sub-menu">
+                    <li><a href="" style="color: #82c91e">Thương hiệu</a>
+                    <ul>
+                        <li><a href="" style="color: #373941">Consair </a>
+                        <li><a href="" style="color: #373941">Razer</a> 
+                    </ul>
+                    <li><a href="" style="color: #82c91e">Giá</a>
+                        <ul>
+                            <li><a href="" style="color: #373941">Dưới 500k</a>
+                            <li><a href="" style="color: #373941">Từ 500k - 1tr</a> 
+                        </ul>
+                    </li>   
+                </ul>
+            </li>
+            <li><a href="">CHUỘT - LÓT CHUỘT</a></li>
+            <li><a href="">TAI NGHE</a></li>
+            <li><a href="">ALES</a></li>
+            <li><a href="">BỘ SƯU TẬP</a></li>
+            <li><a href="">THÔNG TIN</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"> </li>
+            <li><img class="timkiem" src="images/search.png" style="width:30px;height:30px;"></li>
+            <li><img class="giohang" src="images/bag.png" style="width:30px;height:30px;"></li>
+            <li>
+                <button class="dangnhap"  href="../sighup/dangky.html"> <p> Đăng nhập </p></button>
+            </li>
+            <li><button class="dangki" href="../sighup/dangnhap.html"><p>  Đăng kí  </p></button></li>
+        </div>
+    </header>
+    <section id="silder">
+        <div class="aspect-ratio-169">
+            <img src="images/slide1.jpg">
+            <img src="images/slide2.jpg">
+            <img src="images/slide3.jpg">
+            <img src="images/silde4.jpg">
+            <img src="images/silde5.jpg">
+        </div>
+        <div class="dotCon">
+         <div class="dot active"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+        </div>
+    </section>
+</body>
+<script>
+    const imgPos = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgCon =document.querySelector('.aspect-ratio-169')
+    const dotitem=document.querySelectorAll(".dot")
+    let imgNum=imgPos.length
+    let index=0;
+    imgPos.forEach(function(image,index){
+      image.style.left= index*100 + "%"
+      dotitem[index].addEventListener("click",function(){
+        slider(index)
+      })
+    })
+    function imgSlide ()
+    {
+        index++;
+        if (index>=imgNum) 
+        {
+            index=0;
+        }
+        slider(index) 
+    }
+    function slider(index){
+        imgCon.style.left="-" +index*100+ "%"
+        const dotAct = document.querySelector('.active')
+        dotAct.classList.remove("active")
+        dotitem[index].classList.add("active")
+    }
+    setInterval(imgSlide,5000)
+
+</script>
+</html>
