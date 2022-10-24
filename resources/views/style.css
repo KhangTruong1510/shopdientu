@@ -365,3 +365,182 @@ button {
 .sanpham-lq-item p {
     font-size: 14px;
 }
+
+
+/*gio hang*/
+
+.giohang {
+    padding: 100px 0;
+}
+
+.giohang-top-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giohang-top {
+    height: 2px;
+    width: 70%;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+
+.cart-top-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.cart-top-item i {
+    color: #dddddd;
+}
+
+.giohang-top-sanpham {
+    border: 1px solid #ea0dba;
+}
+
+.giohang-top-sanpham i {
+    color: #ea0dba;
+}
+
+.giohang-content-left {
+    flex: 2;
+    padding-right: 12px;
+}
+
+.giohang-content-left table {
+    width: 100%;
+    text-align: center;
+}
+
+.giohang-content-left table th {
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    border-collapse: collapse;
+    border-bottom: 2px solid #dddddd;
+}
+
+.giohang-content-left table p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.giohang-content-left table input {
+    width: 30px;
+}
+
+.giohang-content-left table i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.giohang-content-left table td {
+    padding: 20px 0;
+    border-bottom: 2px solid #dddddd;
+}
+
+.giohang-content-left td:first-child img {
+    width: 130px;
+}
+
+.giohang-content-left td:nth-child(2) {
+    max-width: 130px;
+}
+
+.giohang-content-right {
+    flex: 1;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+}
+
+.giohang-content-right table {
+    width: 100%;
+}
+
+.giohang-content-right table th {
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    border-collapse: collapse;
+    border-bottom: 2px solid #dddddd;
+}
+
+.giohang-content-right table td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 6px;
+}
+
+.giohang-content-right tr:nth-child(3) td {
+    border-bottom: 2px solid #dddddd;
+}
+
+.giohang-content-right tr td:last-child {
+    text-align: right;
+}
+
+.giohang-content-right-button {
+    text-align: center;
+    align-items: center;
+}
+
+.giohang-content-right-button button {
+    padding: 0 18px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.giohang-content-right-button button:first-child {
+    background-color: #fff;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+.giohang-content-right-button button:first-child:hover {
+    background-color: #dddddd;
+}
+
+.giohang-content-right-button button:last-child {
+    background-color: black;
+    color: #fff;
+    border: None;
+    border: 1px solid black;
+}
+
+.giohang-content-right-button button:last-child:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.giohang-content-right-dangnhap {
+    margin-top: 20px;
+}
+
+.giohang-content-right-dangnhap p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.giohang-content-right-dangnhap a {
+    color: #ea0dba;
+}
