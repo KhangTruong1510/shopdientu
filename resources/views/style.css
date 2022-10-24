@@ -1,17 +1,20 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 12px 50px;
@@ -22,21 +25,23 @@ header{
     left: 0;
     width: 100%;
     z-index: 1;
-    background: rgba(225, 225,225, 0.3);
-
+    background: rgba(225, 225, 225, 0.3);
 }
-.logo{
+
+.logo {
     flex: 1;
 }
-.menu{
+
+.menu {
     flex: 3;
     display: flex;
+}
 
+.menu>li {
+    padding: 0 12px;
+    position: relative;
 }
-.menu > li{
-padding: 0 12px;
-position: relative;
-}
+
 .sub-menu {
     position: absolute;
     width: 150px;
@@ -48,33 +53,37 @@ position: relative;
     z-index: 1;
     background-color: #fff;
 }
-.sub-menu li a{
+
+.sub-menu li a {
     font-weight: normal;
 }
 
 .sub-menu ul {
     padding-left: 20px;
 }
-.menu > li:hover .sub-menu{
+
+.menu>li:hover .sub-menu {
     visibility: visible;
     top: 45px;
-
 }
-.menu > li > a {
+
+.menu>li>a {
     font-size: 12px;
     font-weight: bold!important;
     display: block;
     line-height: 20px;
 }
-.others{
+
+.others {
     flex: 1;
     display: flex;
 }
-.others > li {
+
+.others>li {
     padding: 0 12px;
 }
 
-.others > li:first-child input{
+.others>li:first-child input {
     width: 250%;
     height: 100%;
     border: none;
@@ -82,27 +91,29 @@ position: relative;
     background: transparent;
     outline: none;
 }
-.others > li:first-child i{
+
+.others>li:first-child i {
     position: absolute;
     right: 10px;
 }
+
 .aspect-ratio-169 {
     display: block;
     position: relative;
     padding-top: 56.25%;
     transition: 0.3S;
-   
-  }
-  
-  .aspect-ratio-169 img {
+}
+
+.aspect-ratio-169 img {
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-  }
-  .dotCon{
+}
+
+.dotCon {
     position: absolute;
     height: 30px;
     width: 100%;
@@ -110,32 +121,247 @@ position: relative;
     align-items: center;
     text-align: center;
     justify-content: center;
-  }
-  .dot {
+}
+
+.dot {
     height: 10px;
     width: 10px;
     background-color: #ccc;
     border-radius: 50%;
     margin-right: 12px;
     cursor: pointer;
-  }
-  .dot.active{
+}
+
+.dot.active {
     background-color: #333;
-  }
-  #silder {
+}
+
+#silder {
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
     overflow: hidden;
-  }
-button{
+}
+
+button {
     background: transparent;
     outline: none;
     border: none;
     cursor: pointer;
 }
-.timkiem{
+
+.timkiem {
     cursor: pointer;
 }
-.giohang{
+
+.giohang {
     cursor: pointer;
+}
+
+
+/* san pham */
+
+.sanpham {
+    padding: 100px 0;
+}
+
+.sanpham-top {
+    margin-bottom: 30px;
+}
+
+.sanpham-top p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.sanpham-content-left {
+    width: 50%;
+}
+
+.sanpham-content-left-anhto {
+    width: 80%;
+    padding-right: 20px;
+}
+
+.sanpham-content-left-anhto img {
+    width: 100%;
+}
+
+.sanpham-content-left-anhnho {
+    width: 20%;
+    padding-right: 20px;
+}
+
+.sanpham-content-left-anhnho img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.sanpham-content-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.sanpham-content-right-tensanpham h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.sanpham-content-right-tensanpham-msp {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.sanpham-content-right-tensanpham-gia {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quantity {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.quantity input {
+    width: 50px;
+    padding-left: 3px;
+}
+
+.sanpham-content-right-tensanpham-button button {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+
+.sanpham-content-right-tensanpham-button button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.sanpham-content-right-tensanpham-button button:first-child:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.sanpham-content-right-tensanpham-hotline {
+    display: flex;
+}
+
+.sanpham-content-right-tensanpham-hotline-item {
+    display: flex;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sanpham-content-right-tensanpham-hotline-item i {
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.sanpham-content-right-tensanpham-QR {
+    margin-left: 20px 0;
+    width: 10%;
+}
+
+.sanpham-content-right-tensanpham-QR img {
+    width: 100%;
+}
+
+.sanpham-content-right-botom {
+    padding-top: 20px;
+    border: 1px solid #dddddd;
+    position: relative;
+}
+
+.sanpham-content-right-botom-top {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sanpham-content-right-botom-content-title {
+    border-bottom: 2px solid #dddddd;
+}
+
+.sanpham-content-right-botom-content-title-item {
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.sanpham-content-right-botom-content-title-item p {
+    padding: 6px;
+    font-size: 14px;
+}
+
+.sanpham-content-right-botom-content {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.sanpham-content-right-botom-content-thongso {
+    display: none;
+}
+
+.active {
+    display: None;
+}
+
+
+/* sanpham lq */
+
+.sanpham-lq {
+    margin-bottom: 50px;
+}
+
+.sanphan-lq-title {
+    margin: 20px 0;
+}
+
+.sanphan-lq-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sanpham-lq-item {
+    width: 25%;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.sanpham-lq-item img {
+    width: 100%;
+}
+
+.sanpham-lq-item h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 6px;
+}
+
+.sanpham-lq-item p {
+    font-size: 14px;
 }
